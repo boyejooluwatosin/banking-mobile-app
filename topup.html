@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopUp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-300 ">
+   <section class="w-[100%] h-[100vh]">
+    <section>
+        <div class="relative">
+            <div class="relative   pt-[30px] px-[20px]  w-[100%] h-[180px] bg-indigo-950 rounded-b-[30px]">
+                <div class="flex justify-between">
+                    <div>
+                       <a href="home.html"> 
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M16 5L8 12L16 19" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </a>
+                    </div>
+                    <div class="text-center text-white text-base font-medium font-['Poppins']">TopUp</div>
+                    <div class="w-6 h-6 relative flex-col justify-start items-start inline-flex">
+                        <div class="w-[3.50px] h-[17.50px] relative">
+                            <div class="w-[3.50px] h-[3.50px] left-0 top-0 absolute bg-white rounded-full"></div>
+                            <div class="w-[3.50px] h-[3.50px] left-0 top-[7px] absolute bg-white rounded-full"></div>
+                            <div class="w-[3.50px] h-[3.50px] left-0 top-[14px] absolute bg-white rounded-full"></div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+          
+            <div class="absolute top-[50%] left-0 w-[100%] flex align-items items-center justify-center  ">
+                    <div class=" w-[80vw] h-[150px]  bg-white p-14 border rounded-[20px]">
+                        <div class="flex items-center justify-between  ">
+                           <a href="addcard.html">
+                            <div class="w-[143px] h-[62px] relative ">
+                                <div class="w-[95px] h-[62px] left-0 top-0 absolute">
+                                    <div class="w-[95px] h-[62px] left-0 top-0 absolute bg-indigo-950 rounded-md"></div>
+                                    <div class="w-[95px] h-[62px] left-0 top-0 absolute">
+                                        <div class="w-[95px] h-[62px] left-0 top-0 absolute bg-blue-950 rounded-md"></div>
+                                       
+                                        <div class="w-[44.38px] h-11 left-[61px] top-[35.82px] absolute rounded-full border-4 border-white"></div>
+                                    </div>
+                                    <div class="w-[15px] h-[9px] left-[72px] top-[8px] absolute">
+                                        <div class="w-[9px] h-[9px] left-0 top-0 absolute bg-white bg-opacity-40 rounded-full"></div>
+                                        <div class="w-[9px] h-[9px] left-[6px] top-0 absolute bg-white bg-opacity-20 rounded-full"></div>
+                                    </div>
+                                    <div class="left-[8px] top-[8px] absolute text-white text-opacity-80 text-[4px] font-normal font-['Poppins']">Payment Card</div>
+                                    <div class="left-[8px] top-[24px] absolute text-slate-50 text-[6px] font-medium font-['Poppins']">1231  3212  2221 0910</div>
+                                    <div class="left-[8px] top-[43px] absolute text-slate-50 text-[7px] font-semibold font-['Poppins']">$2885.00</div>
+                                    <div class="w-[11px] h-[15px] left-[77px] top-[43px] absolute text-white text-opacity-80 text-[4px] font-normal font-['Poppins'] leading-tight">12/24</div>
+                                </div>
+                                <div class="left-[111px] top-[21px] absolute text-stone-500 text-xs font-medium font-['Poppins'] leading-tight">Debit</div>
+                            </div>
+                           </a>
+                            <div class="text-indigo-950 text-base font-semibold font-['Poppins']">$364.00</div>
+                        </div>  
+                    </div>
+            </div>    
+        </div>  
+    </section>
+    <section class="pt-[50px] px-[5%]">
+        <div>
+            <div class="text-indigo-950 text-base font-medium font-['Poppins'] pt-[20px]">Enter Nominal</div>
+            <div class="text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight ">
+                <input type="text" name="text" id="text" placeholder="Set the nominal needs" class="w-[100%] h-[50px]">
+            </div>
+            <div class="space-x-4 w-[100%] pt-[10px]">
+                <div class="flex items-center justify-between ">
+                    <button id="decreaseVolume" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-full">
+                        -
+                        </button>
+                        <div class=" relative flex items-center justify-center">
+                            <span id="volumeDisplay" class="absolute  px-2 py-1 bg-black text-white rounded ">
+                            50
+                            </span>
+                        </div>
+                        <button id="increaseVolume" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-full ">
+                        +
+                        </button>
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <div class="w-[100%] flex items-center justify-center px-[10%] pt-[20px]">
+                    <input type="range" min="0" max="100" value="50" class="slider appearance-black w-full h-1 bg-gray-300 rounded-full outline-none focus:outline-none"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-[10%] pt-[30px]">
+        <div class="flex items-center justify-between pt-[10px]">
+            <div class="w-[98px] h-12 bg-neutral-50 rounded-md flex items-center justify-center">
+                <div class="text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">$50</div>
+            </div>
+            <div class="w-[98px] h-12 bg-neutral-50 rounded-md flex items-center justify-center">
+                <div class="text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">$100</div>
+            </div>
+            <div class="w-[98px] h-12 bg-neutral-50 rounded-md flex items-center justify-center">
+                <div class="text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">$150</div>
+            </div>
+        </div>
+        <div class="flex items-center justify-between pt-[10px]">
+            <div class="w-[98px] h-12 bg-neutral-50 rounded-md flex items-center justify-center">
+                <div class="text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">$200</div>
+            </div>
+            <div class="w-[98px] h-12 bg-neutral-50 rounded-md flex items-center justify-center">
+                <div class="text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">$250</div>
+            </div>
+            <div class="w-[98px] h-12 bg-neutral-50 rounded-md flex items-center justify-center">
+                <div class="text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">$300</div>
+            </div>
+        </div>
+        <div class="flex items-center justify-between pt-[10px]">
+            <div class="w-[98px] h-12 bg-neutral-50 rounded-md flex items-center justify-center">
+                <div class="text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">$350</div>
+            </div>
+            <div class="w-[98px] h-12 bg-neutral-50 rounded-md flex items-center justify-center">
+                <div class="text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">$400</div>
+            </div>
+            <div class="w-[98px] h-12 bg-neutral-50 rounded-md flex items-center justify-center">
+                <div class="text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">$450</div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-2 justify-center items-center pt-[20%]">
+            <button id="showModal" class="bg-indigo-950  text-white font-bold rounded-[40px] w-[90%] h-14 py-2 px-4 rounded">
+                Verify Now
+            </button>
+        </div>
+        <div class="flex items-center justify-center pt-[10px]">
+            <a href="home.html"><u>cancel</u></a>
+        </div>
+    </section>
+    <div class="fixed inset-0 flex items-center justify-center z-50 bg-opacity-50 bg-gray-900 backdrop-blur-lg hidden" id="overlay">
+        <div class="bg-white p-8 rounded shadow-md w-1/2">
+          <button id="closeModal" class="absolute top-0 right-0 m-4 text-gray-600 hover:text-gray-800">&times;</button>
+          <div class=" bg-opacity-50 flex items-center justify-center">
+              <div class="modal-content  bg-white p-8  w-[100%] h-[60vh] bg-white rounded-[20px]">
+                  <div class="flex items-center justify-center pt-[20px]">  
+                      <img  src="/images/Account Created.png" alt="">
+                  </div>
+                  <div>
+                      <div class="text-indigo-950 text-2xl font-semibold font-['Poppins'] text-center">Top Up Successfully</div>
+                  </div>
+                  <div class="flex items-center justify-center pt-[20px]">
+                      <div class="text-center text-indigo-950 text-sm font-normal font-['Poppins'] leading-normal">The amount  will be reflected in your<br/>account with in few minutes</div>
+                  </div>
+                  <div class="flex flex-col gap-2 justify-center items-center pt-[30px]">
+                      <button id="closeModalButton" class="hover:text-gray-700"">
+                          <div class="w-[40vw] h-10 py-4 bg-indigo-950 rounded-[40px] justify-center items-center inline-flex">
+                              <div class="text-center text-white text-base font-semibold font-['Poppins']">Continue</div>
+                          </div>
+                      </button>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
+   <script>
+    const decreaseVolumeBtn = document.getElementById('decreaseVolume');
+    const increaseVolumeBtn = document.getElementById('increaseVolume');
+    const slider = document.querySelector('.slider');
+    const volumeDisplay = document.getElementById('volumeDisplay');
+  const showModalBtn = document.getElementById('showModal');
+  const closeModalBtn = document.getElementById('closeModal');
+  const overlay = document.getElementById('overlay');
+
+  decreaseVolumeBtn.addEventListener('click', () => {
+    if (slider.value > 0) {
+      slider.value = parseInt(slider.value) - 10;
+      updateVolume();
+    }
+  });
+  
+  increaseVolumeBtn.addEventListener('click', () => {
+    if (slider.value < 100) {
+      slider.value = parseInt(slider.value) + 10;
+     updateVolume();
+    }
+  });
+
+  
+  slider.addEventListener('input', updateVolume);
+
+  function updateVolume() {
+      const volume = parseInt(slider.value);
+      volumeDisplay.textContent = volume.toString();
+      // Any additional logic based on the volume change
+    }
+
+  showModalBtn.addEventListener('click', function() {
+    overlay.classList.remove('hidden');
+  });
+
+  closeModalBtn.addEventListener('click', function() {
+    overlay.classList.add('hidden');
+  });
+</script>
+</body>
+</html>

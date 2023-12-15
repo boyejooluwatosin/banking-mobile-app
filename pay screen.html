@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8">
+    <div class="flex items-center justify-between w-[100%]">
+       <a href="home.html"> <img src="/images/46.svg" alt=""></a>
+        <div class="text-center text-neutral-800 text-xl font-bold font-['Poppins']">pay With CHILDPAY</div>
+        <div class="w-6 h-6 relative flex-col justify-start items-start inline-flex">
+            <div class="w-[3.50px] h-[17.50px] relative">
+                <div class="w-[3.50px] h-[3.50px] left-0 top-0 absolute bg-indigo-950 rounded-full"></div>
+                <div class="w-[3.50px] h-[3.50px] left-0 top-[7px] absolute bg-indigo-950 rounded-full"></div>
+                <div class="w-[3.50px] h-[3.50px] left-0 top-[14px] absolute bg-indigo-950 rounded-full"></div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between px-10 border-b-2 w-[100%]">
+        <div id="scan QR Code" class="p-2 cursor-pointer hover:border-b-4 border-black py-6 text-indigo-950 text-sm font-semibold font-['Poppins']">Scan QR </div>
+        <div id="QR Code" class="p-2 cursor-pointer hover:border-b-4 border-black py-6 text-indigo-950 text-sm font-semibold font-['Poppins']">QR code</div>
+    </div>
+    
+    <div id="QR1" class=" flex items-center justify-center pt-[100px]">
+        <!-- Unread messages content -->
+        <div class="flex-col">
+            <div id="app" class="text-center w-[80vw]flex  items-center ">
+                <video id="qr-video" class="w-64 h-64 border-2" autoplay></video>
+                <p id="qr-result" class="mt-4 text-lg font-medium"></p>
+                <h1 class="text-sm font-semibold mb-4"> scan QR Code here</h1>
+            </div>
+            <div class="flex items-center justify-center pt-[30px]">
+                <button>
+                    <div class="w-[72px] h-[72px] py-4 bg-indigo-950 rounded-[40px] justify-center items-center inline-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M17.2222 12.6667V2L5 18H14.7778V30L27 12.6667H17.2222Z" fill="white"/>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="QR2" class="hidden flex items-center justify-center">
+        <!-- Read messages content -->
+        <div class=" flex flex-col items-center justify-center pt-[50px]">
+            <img src="/images/Barcode.png" alt="">
+            <div class="text-indigo-950 text-sm font-medium font-['Poppins'] leading-tight pt-[10px]">@alexandermichael</div>
+        </div>
+    </div>
+    
+    <script>
+         // Function to show unread messages and hide read messages
+function showScanQrCodes() {
+    document.getElementById('QR1').classList.remove('hidden');
+    document.getElementById('QR2').classList.add('hidden');
+}
+
+// Function to show read messages and hide unread messages
+function showQrCodes() {
+    document.getElementById('QR2').classList.remove('hidden');
+    document.getElementById('QR1').classList.add('hidden');
+}
+
+// Event listeners for click on unread and read notifications
+document.getElementById('scan QR Code').addEventListener('click', function() {
+    showScanQrCodes();
+});
+
+document.getElementById('QR Code').addEventListener('click', function() {
+    showQrCodes();
+});
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-5">
+    <section>
+      
+        <div class="flex flex-col justify-center items-center gap-3 pt-[100px]" >
+            <input class="border-b-2 mb-2 w-[80vw] flex justify-center items-center  " type="text" name="text" id="text" placeholder="first and middle name">
+            <input class="border-b-2 mb-2 w-[80vw] flex justify-center items-center  " type="text" name="text" id="text" placeholder="last name">
+            <div class="border-b-2 mb-2 w-[80vw] flex">
+                <select  class="flex justify-center items-center" name="country code" id="country code" >
+                <option value="USA">USA +1</option>
+                <option value="NIG">NIG +234</option>
+                </select>
+                <input class="flex justify-center items-center w-[100%]" type="tel" name="tel" id="tel" placeholder="number">
+            </div>
+            <div  class="border-b-2 mb-2 w-[80vw]">
+                <input type="date" name="date" id="date" class="w-[100%]">
+            </div>
+            <div class="flex gap-1 border-b-2 mb-2 w-[80vw] items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99967 14C7.20069 14 3 10.5989 3 7.04219C3 4.25776 5.23807 2 7.99967 2C10.7613 2 13 4.25776 13 7.04219C13 10.5989 8.79866 14 7.99967 14Z" fill="#100D40" stroke="#100D40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.66683 7.00001C9.66683 6.07917 8.92067 5.33301 8.0005 5.33301C7.07965 5.33301 6.3335 6.07917 6.3335 7.00001C6.3335 7.92018 7.07965 8.66634 8.0005 8.66634C8.92067 8.66634 9.66683 7.92018 9.66683 7.00001Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="text" name="text" id="text" placeholder="address" class="w-[100%]">
+            </div>
+            <div class="border-b-2 mb-2 w-[80vw] ">
+                <input type="text" name="text" id="class" placeholder="Description" class="w-[100%] text-gray-400 text-sm font-normal font-['Inter'] w-[100%] h-[40px] leading-[14px]">
+            </div>
+        </div>
+        <div class="flex flex-col gap-2 justify-center items-center pt-[150px]">
+            <button>
+                <div class="w-[80vw] h-14 py-4 bg-indigo-950 rounded-[40px] justify-center items-center inline-flex">
+                    <div class="text-center text-white text-base font-semibold font-['Poppins']">Save</div>
+                </div>
+            </button>
+            
+            <button>
+                <div class="w-[80vw] h-14 py-4 bg-indigo-950 rounded-[40px] justify-center items-center inline-flex">
+                    <div class="text-center text-white text-base font-semibold font-['Poppins']">cancel</div>
+                </div>
+            </button>
+        </div>
+        
+    </section>
+</body>
+</html>

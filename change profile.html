@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-5">
+    <section>
+        <div class="flex items-center justify-between pt-[20px]">
+            <a href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16 5L8 12L16 19" stroke="#333333" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </a>
+            <div class="text-neutral-800 text-base font-medium font-['Poppins'] leading-[18px]">Change profile</div>
+            <div class="w-6 h-6 relative flex-col justify-start items-start inline-flex">
+                <div class="w-[3.50px] h-[17.50px] relative">
+                    <div class="w-[3.50px] h-[3.50px] left-0 top-0 absolute bg-zinc-800 rounded-full"></div>
+                    <div class="w-[3.50px] h-[3.50px] left-0 top-[7px] absolute bg-zinc-800 rounded-full"></div>
+                    <div class="w-[3.50px] h-[3.50px] left-0 top-[14px] absolute bg-zinc-800 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center pt-[20px]">
+            <div class="w-[80vw]">
+                <div class="opacity-50 text-gray-950 text-xs font-normal font-['Poppins'] w-[80vw]">Name</div>
+                   <div class="text-zinc-800 text-sm font-normal font-['Poppins'] pt-[10px]">
+                        <input type="text" name="text" id="text" placeholder="alexander@gmail.com" class="w-[80vw] h-10 border rounded-[10px] border-gray-200 p-2">
+                     </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center pt-[20px]">
+            <div class="w-[80vw]">
+                <div class="opacity-50 text-gray-950 text-xs font-normal font-['Poppins'] w-[80vw]">Date Of Birth</div>
+                   <div class="text-zinc-800 text-sm font-normal font-['Poppins'] pt-[10px]">
+                        <input type="date" name="date" id="date" placeholder="09-02-2002" class="w-[80vw] h-10 border rounded-[10px] border-gray-200 p-2">
+                     </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center pt-[20px]">
+            <div class="w-[80vw]">
+                <div class="opacity-50 text-gray-950 text-xs font-normal font-['Poppins']">Address</div>
+                   <div class="text-zinc-800 text-sm font-normal font-['Poppins'] pt-[10px]">
+                         <input type="text" name="text" id="text" placeholder="2910 Western Siwidari " class="w-[80vw] h-10 border rounded-[10px] border-gray-200 p-2">
+                     </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center pt-[20px]">
+            <div class="text-zinc-800 text-sm font-normal font-['Poppins'] w-[80vw]">
+                <input type="text" name="text" id="text" placeholder="Description" class="w-[80vw] h-[150px] border rounded-[10px] border-gray-200 p-2">
+            </div>
+        </div>
+        <div class="flex items-center justify-center pt-[250px]">
+            <button class="w-[70%] h-14 px-[92px] py-4 bg-indigo-950 rounded-[40px] justify-center items-center inline-flex">
+                <div class="text-center text-white text-base font-semibold font-['Poppins']">Save Profile</div>
+              </button>
+        </div>
+    </section>
+</body>
+</html>

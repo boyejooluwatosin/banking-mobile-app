@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add new card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex items-center justify-center">
+        <div class="flex items-center justify-between pt-[20px] w-[95%]">
+            <a href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16 5L8 12L16 19" stroke="#333333" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </a>
+            <div class="text-zinc-800 text-center text-2xl font-semibold font-['Poppins'] leading-[18px]">Change Password</div>
+            <div class="w-6 h-6 relative flex-col justify-start items-start inline-flex">
+                <div class="w-[3.50px] h-[17.50px] relative">
+                    <div class="w-[3.50px] h-[3.50px] left-0 top-0 absolute bg-zinc-800 rounded-full"></div>
+                    <div class="w-[3.50px] h-[3.50px] left-0 top-[7px] absolute bg-zinc-800 rounded-full"></div>
+                    <div class="w-[3.50px] h-[3.50px] left-0 top-[14px] absolute bg-zinc-800 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="flex items-center justify-center pt-[40px]">
+            <div class="opacity-50 text-gray-950 text-xs font-normal font-['Poppins'] w-[90%]">Card Number</div>
+        </div>
+        <div class="flex items-center justify-center pt-[10px]">
+            <div class="border border-gray-300 rounded-[10px] w-[90%] ">
+                <div class="flex items-center justify-center">
+                    <input type="text" name="text" id="text" class="w-[80%] h-[80px] ">
+                    <div class="w-[46px] h-8 relative">
+                       <div class="w-[46px] h-8 left-0 top-0 absolute bg-indigo-950 rounded"></div>
+                       <div class="w-[46px] h-8 left-0 top-0 absolute">
+                           <div class="w-[46px] h-8 left-0 top-0 absolute bg-blue-950 rounded"></div>
+                           <div class="w-[19.83px] h-[25.04px] left-[13.75px] top-[-9.92px] absolute origin-top-left rotate-180 border-4 border-white"></div>
+                           <div class="w-[21.49px] h-[22.72px] left-[28.54px] top-[20.59px] absolute rounded-full border-2 border-white"></div>
+                           <div class="left-[4px] top-[4px] absolute text-white text-opacity-80 text-[2px] font-normal font-['Poppins']">Payment Card</div>
+                           <div class="left-[4px] top-[11px] absolute text-slate-50 text-[3px] font-medium font-['Poppins']">1231  3212  2221 0910</div>
+                           <div class="left-[4px] top-[22px] absolute text-slate-50 text-[4px] font-semibold font-['Poppins']">$2887.65</div>
+                           <div class="w-1.5 h-[3.43px] left-[36px] top-[4px] absolute">
+                               <div class="w-[3.60px] h-[3.43px] left-0 top-0 absolute bg-white bg-opacity-40 rounded-full"></div>
+                               <div class="w-[3.60px] h-[3.43px] left-[2.40px] top-0 absolute bg-white bg-opacity-20 rounded-full"></div>
+                           </div>
+                           <div class="w-[7px] h-1 left-[37px] top-[26px] absolute text-white text-opacity-80 text-[2px] font-normal font-['Poppins'] leading-[4px]">12/24</div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="flex items-center justify-center gap-3">
+        <div class="w-[45%] pt-[20px]">
+             <div class="w-[91%]">
+                <div class="opacity-50 text-gray-950 text-xl font-normal font-['Poppins']">Card Number</div>
+             </div>
+             <div class="pt-[10px]">
+                <div class=" rounded-[20px]">
+                    <input type="text" id="text" name="text" class="w-[100%] h-10 border border-gray-300 rounded-[10px]" >
+                </div>
+             </div>
+        </div>
+        <div class="w-[45%] pt-[20px]">
+            <div class="w-[91%]">
+               <div class="opacity-50 text-gray-950 text-xl font-normal font-['Poppins']">CVC/CVV</div>
+            </div>
+            <div class="pt-[10px]">
+               <div class=" ">
+                   <input type="text" id="text" name="text" class="w-[100%] h-10 border border-gray-300 rounded-[10px]" >
+               </div>
+            </div>
+       </div>
+    </div>
+
+   
+    <div class="flex items-center justify-center">
+        <div class="w-[91%] pt-[20px]">
+             <div class="w-[91%]">
+                <div class="opacity-50 text-gray-950 text-xl font-normal font-['Poppins']">Cardholder Name</div>
+             </div>
+             <div class="pt-[10px]">
+                <div class=" ">
+                    <input type="text" id="text" name="text" class="w-[100%] h-10 border border-gray-300 rounded-[10px]" placeholder="Alexander Michael">
+                </div>
+             </div>
+        </div>
+    </div>
+    <div  class="flex items-center justify-center py-[20px]">
+        <div class="text-zinc-800 text-xl font-normal font-['Poppins'] w-[91%]">Billing Address</div>
+    </div>
+    
+    <div class="flex items-center justify-center">
+        <div class="w-[91%] pt-[20px]">
+             <div class="w-[91%]">
+                <div class="opacity-50 text-gray-950 text-xl font-normal font-['Poppins']">Address Line 1</div>
+             </div>
+             <div class="pt-[10px]">
+                <div class="">
+                    <input type="text" id="text" name="text" class="w-[100%] h-10 border border-gray-300 rounded-[10px]" placeholder="2890 Pangandaran Street">
+                </div>
+             </div>
+        </div>
+    </div>
+    
+    <div class="flex items-center justify-center">
+        <div class="w-[91%] pt-[20px]">
+             <div class="w-[91%]">
+                <div class="opacity-50 text-gray-950 text-xl font-normal font-['Poppins']">Address Line 2</div>
+             </div>
+             <div class="pt-[10px]">
+                <div class="">
+                    <input type="text" id="text" name="text" class="w-[100%] h-10 border border-gray-300 rounded-[10px]">
+                </div>
+             </div>
+        </div>
+    </div>
+    
+    <div class="flex items-center justify-center pt-[150px]">
+        <button class="w-[70%] h-14 px-[92px] py-4 bg-indigo-950 rounded-[40px] justify-center items-center inline-flex">
+            <div class="text-center text-white text-base font-semibold font-['Poppins']">Save Card</div>
+        </button>
+    </div>
+        
+    
+       
+       
+    
+</body>
+</html>
